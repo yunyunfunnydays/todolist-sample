@@ -1,0 +1,138 @@
+{
+	"info": {
+		"_postman_id": "05adb84a-2203-47e6-b0e7-2d70a5015e62",
+		"name": "todolist-heroku",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "取得所有待辦",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://murmuring-badlands-56547.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"murmuring-badlands-56547",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增一筆待辦",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"第二個\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://murmuring-badlands-56547.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"murmuring-badlands-56547",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除所有待辦",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://murmuring-badlands-56547.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"murmuring-badlands-56547",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除單筆待辦",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://murmuring-badlands-56547.herokuapp.com/todos/2e96d2ff-343b-4031-9f77-d2bd4c311691",
+					"protocol": "https",
+					"host": [
+						"murmuring-badlands-56547",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						"2e96d2ff-343b-4031-9f77-d2bd4c311691"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "修改單筆待辦",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n    \"title\": \"修改第一個抬頭\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://murmuring-badlands-56547.herokuapp.com/todos/0d29ce8f-a5c9-4ba0-8fbd-a017a16e939c",
+					"protocol": "https",
+					"host": [
+						"murmuring-badlands-56547",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						"0d29ce8f-a5c9-4ba0-8fbd-a017a16e939c"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
