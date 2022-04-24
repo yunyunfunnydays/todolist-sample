@@ -122,4 +122,5 @@ const requestListener = (req, res) => {
   }
 };
 const server = http.createServer(requestListener);
-server.listen(3005);
+//* 部署到 HEROKU： HEROKU 是用此環境變數 process.env.PORT 作為端口，本地端無此環境變數所以還是用 3005
+server.listen(process.env.PORT || 3005);
